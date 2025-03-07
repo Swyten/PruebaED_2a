@@ -14,7 +14,8 @@ public class Persona implements Comparable<Persona> {
     private String nombre;
     private char genero;
     private LocalDate nacimiento;
-
+    
+    //contructores
     public Persona() {
         nif = new Nif();
         nombre = "";
@@ -35,7 +36,8 @@ public class Persona implements Comparable<Persona> {
         this.nacimiento
                 = LocalDate.of(ano, mes, dia);
     }
-
+    
+    //métodos
     public Nif getNif() {
         return nif;
     }
@@ -81,14 +83,28 @@ public class Persona implements Comparable<Persona> {
             return nif + "\t" + nombre + "\t\t\t" + getEdad();
         }
     }
-
+    
+    /**
+     * 
+     * @param a
+     * compara una persona con otra
+     * @return 
+     * retorna el booleano correspondiente a la comparacion
+     */
     public boolean equals(Persona a) {
         if (a == null) {
             return false;
         }
         return a.nif.toString().equals(this.nif.toString());
     }
-
+    
+    /**
+     * 
+     * @param obj
+     * establece el indice de comparacion que indica cuando dos objetos
+     * del mismo tipo son diferentes
+     * @return 
+     */
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -104,7 +120,13 @@ public class Persona implements Comparable<Persona> {
 
         return Objects.equals(this.nif, other.nif);
     }
-
+    
+    /**
+     * 
+     * @param o
+     * establece el orden natural de la clase
+     * @return 
+     */
     @Override
     public int compareTo(Persona o) {
         return this.nif.toString().compareTo(o.nif.toString());

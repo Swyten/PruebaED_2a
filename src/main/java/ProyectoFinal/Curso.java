@@ -1,24 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ProyectoFinal;
-
 import java.util.TreeSet;
-
-/**
- *
- * @author ProfDiurno
- */
 public class Curso {
 
     private String nombre;
     private TreeSet<Persona> listaAlumnos;
-
+    
+    //método getter
     protected String getNombre() {
         return nombre;
     }
-
+    
+    /**
+     * 
+     * @param nombre 
+     * inicializa un conjunto vacío de alumnos
+     * y nombra al curso con el nombre que se haya introducido como
+     * parámetro
+     */
     public Curso(String nombre) {
         this.nombre = nombre;
         listaAlumnos = new TreeSet<>();
@@ -34,7 +32,13 @@ public class Curso {
         }
         return s;
     }
-
+    
+    /**
+     * 
+     * @param p 
+     * recibe una persona y la añade a un conjunto
+     * de alumnos
+     */
     public void aniadirAlumno(Persona p) {
         listaAlumnos.add(p);
     }
