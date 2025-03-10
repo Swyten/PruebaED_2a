@@ -38,6 +38,7 @@ public class Persona implements Comparable<Persona> {
     }
     
     //métodos
+    //setters y getters
     public Nif getNif() {
         return nif;
     }

@@ -15,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  *
  * @author Vespertino
+ * test de la clase persona
  */
 public class PersonaTest {
     
