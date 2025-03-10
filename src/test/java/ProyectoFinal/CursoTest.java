@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
- */
+
 package ProyectoFinal;
 
 import org.junit.jupiter.api.AfterEach;
@@ -16,7 +13,9 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author Vespertino
  */
 public class CursoTest {
-    
+    /**
+     * prueba de actualizacion de CursoTest
+     */
     public CursoTest() {
     }
     
