@@ -18,7 +18,9 @@ import static org.junit.jupiter.api.Assertions.*;
  * test de la clase persona
  */
 public class PersonaTest {
-    
+    /**
+     * Prueba de actualizacion de PersonaTest
+     */
     public PersonaTest() {
     }
     
